@@ -1,9 +1,12 @@
-export default ({
-    modules: ['@nuxtjs/tailwindcss', 'nuxt-icon', '@vueuse/nuxt'],
-    build: {
-        transpile: ["@headlessui/vue"],
-    },
-    colorMode: {
-        classSuffix: '',
-    },
-})
+export default {
+  modules: ["@nuxtjs/tailwindcss", "nuxt-icon", "@vueuse/nuxt"],
+  build: {
+    transpile: ["@headlessui/vue"],
+  },
+  nitro: {
+    preset: "vercel-edge",
+  },
+  colorMode: {
+    classSuffix: "",
+  },
+};
